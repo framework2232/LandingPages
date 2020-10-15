@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;  
+}
+.bg__overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;   
+    opacity: 0.6;
+    z-index: -1;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;   
+    background-position: right;
+    z-index: -2;
+    resize: both;
+}
+.text__box{
+    height: auto;
+    position: absolute;
+    margin: 1rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+h1{ 
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: orangered;
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Shadows Into Light', cursive;
+    text-align: justify;
+    width: 100%;
+    max-width: 700px;
+    font-size: 1.2rem;
+    min-width: 270px;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+button{    
+    font-family: 'Shadows Into Light', cursive;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 68, 0, 0.5);
+    border: whitesmoke 3px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 30ch;
+    letter-spacing: 4px;
+}
+button:hover{
+    background-color: rgba(255, 68, 0, 0.9);
+}
