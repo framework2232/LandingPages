@@ -3,25 +3,24 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;   
 }
 section{
     min-height: 100vh;
 }
+.hero__image{
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
 .hero__overlay{
     position: absolute;
-    top: 0;      
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.6;
-}
-.hero__image{
-    min-height: 100vh;
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
 }
 .hero__text{
     position: absolute;
@@ -35,22 +34,22 @@ section{
 .hero__title{ 
     font-family: 'Shadows Into Light', cursive;
     font-size: 2.4rem;
-    color:   rgb(255, 153, 51);
-    margin-bottom: 1rem;    
+    color:rgb(255, 153, 51);
+    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 .hero__description{
     width: 100%;
     max-width: 700px;
     font-family: 'Shadows Into Light', cursive;
-    color: rgb(245, 245, 245);  
+    color: rgb(245, 245, 245);
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.5;
     letter-spacing: 2px;
     margin-bottom: 4rem;
 }
-.hero__button{    
+.hero__button{
     background-color: rgba(255, 153, 51, 0.5);
     border-color:  rgb(245, 245, 245);
     border-width: 3px;
@@ -59,9 +58,10 @@ section{
     padding: 10px 20px;
     width: 30ch;
     font-family: 'Shadows Into Light', cursive;
+    color: rgb(245, 245, 245);
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;    
+    font-weight: bold;
     letter-spacing: 4px;
 }
 .hero__button:hover{
