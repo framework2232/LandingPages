@@ -3,71 +3,67 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;   
 }
 section{
-    position: relative;
     min-height: 100vh;
-    width: 100vw;  
 }
-.bg__overlay{
-    background-color: black;
+.hero__overlay{
+    position: absolute;
+    top: 0;      
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;   
+    background-color: black;
     opacity: 0.6;
+}
+.hero__image{
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
     z-index: -1;
 }
-img{
-    width: 100vw;
-    height: 100vh;
+.hero__text{
     position: absolute;
-    top: 0;   
-    background-position: right;
-    z-index: -2;
-    resize: both;
-}
-.text__box{
-    height: auto;
-    position: absolute;
+    top: 0;
     margin: 1rem;
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     overflow: hidden;
 }
-h1{ 
+.hero__title{ 
     font-family: 'Shadows Into Light', cursive;
     font-size: 2.4rem;
-    margin-bottom: 1rem;
-    color: orangered;
+    color:   rgb(255, 153, 51);
+    margin-bottom: 1rem;    
     text-transform: uppercase;
 }
-p{
-    font-family: 'Shadows Into Light', cursive;
-    text-align: justify;
+.hero__description{
     width: 100%;
     max-width: 700px;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(245, 245, 245);  
     font-size: 1.2rem;
-    min-width: 270px;
-    margin-bottom: 4rem;
+    text-align: justify;
     line-height: 1.5;
     letter-spacing: 2px;
+    margin-bottom: 4rem;
 }
-button{    
-    font-family: 'Shadows Into Light', cursive;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: rgba(255, 68, 0, 0.5);
-    border: whitesmoke 3px solid;
+.hero__button{    
+    background-color: rgba(255, 153, 51, 0.5);
+    border-color:  rgb(245, 245, 245);
+    border-width: 3px;
+    border-style: solid;
     border-radius: 5px;
     padding: 10px 20px;
     width: 30ch;
+    font-family: 'Shadows Into Light', cursive;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;    
     letter-spacing: 4px;
 }
-button:hover{
-    background-color: rgba(255, 68, 0, 0.9);
+.hero__button:hover{
+    background-color: rgba(255, 153, 51, 0.8);
 }
